@@ -1,0 +1,20 @@
+import React from 'react'
+
+const HeroCta = () => {
+
+    const message = 'Hi, I would like to discuss a new project.'
+    const phone = 916287636236 
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  return (
+    <a  href={url}
+        target='_blank' 
+        rel="noopener noreferrer" 
+        className='px-6 py-3 bg-emerald-300 text-[18px] rounded-2xl mt-5 '
+        >
+         Start project today  ➤     
+       
+    </a>
+  )
+}
+
+export default HeroCta
