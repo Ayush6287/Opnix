@@ -3,7 +3,7 @@ import SocailMediaElement from '../../../Pages/Contact/Secondvh/ContactElementSe
 
 const ThirdFotterSection = () => {
   return (
-    <div className='h-[35vh] w-max gap-10  flex flex-col justify-between '>
+    <div className=  ' sm:h-[35vh] w-max gap-10  flex flex-col justify-between '>
       <SocailMediaElement />
       <div className='  '>
         <h1 className='text-xl underline mb-4'>

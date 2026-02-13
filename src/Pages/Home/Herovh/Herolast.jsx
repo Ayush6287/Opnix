@@ -19,8 +19,8 @@ const Herolast = () => {
   }, [] );
 
   return (
-   <div className="mt-14   flex flex-row justify-between  px-6">
-  <div className="grid md:grid-cols-4 gap-8 text-center">
+   <div className= "mt-14   flex flex-row justify-between  px-6">
+  <div className="grid md:grid-cols-4 grid-rows-2  gap-8 text-center ">
     
     <div className= "lastcta  p-6  border-l-6 border-l-emerald-300  hover:shadow-lg transition  border-b-2 h  border-gray-300">
       <h3 className="text-xl  font-semibold mb-2">Fast Delivery</h3>

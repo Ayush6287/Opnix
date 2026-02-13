@@ -9,9 +9,9 @@ const HeroCta = () => {
     <a  href={url}
         target='_blank' 
         rel="noopener noreferrer" 
-        className='px-6 py-3 bg-emerald-300 text-[18px] rounded-2xl mt-5 '
+        className='px-6 py-3 bg-emerald-700  text-white   text-[18px] rounded-2xl mt-5  hover:bg-blue-400'
         >
-         Start project today  ➤     
+         Launch your product faster  ➤     
        
     </a>
   )

@@ -3,17 +3,23 @@ import HeroHeading from './Herovh/HeroHeading'
 import HeroPara from './Herovh/HeroPara'
 import HeroCta from './Herovh/HeroCta'
 import HeroLabel from './Herovh/HeroLabel'
-import Herolast from './Herovh/Herolast'
+
 import Services from '../Services/Services'
+import Label from './Herovh/Label'
+import PrImage from './Herovh/PrImage'
 
 const Home = () => {
   return (
-    <div className='h-screen   bg-[whitesmoke] w-full    flex flex-col items-center justify-center  text-black'>
-      <HeroLabel />
+    <div className='h-full bg-[radial-gradient(circle_at_top,_rgba(16,185,129,0.12),_transparent_60%),whitesmoke]   w-full    flex flex-col  text-black'>
+     <div className='flex flex-col mt-15 sm:mt-20 items-center bg-[whitesmoke] w-full h-screen  text-black'>
+       <Label />
      <HeroHeading />
      <HeroPara />
+      <PrImage />
      <HeroCta />
-     <Herolast />
+     <HeroLabel />
+   
+     </div>
     
     </div>
   )

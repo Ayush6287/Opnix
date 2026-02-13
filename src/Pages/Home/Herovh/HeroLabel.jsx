@@ -1,30 +1,52 @@
-import React from 'react'
-import { useEffect } from 'react'
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+
 const HeroLabel = () => {
+  const tickerRef = useRef(null);
 
   useEffect(() => {
-    gsap.to(".ticker", {
-      x: "-50%",
-      duration: 4,
-      ease: "linear",
-      repeat : -1
-    });
+    const el = tickerRef.current;
+
+    gsap.fromTo(
+      el,
+      { x: 0 },
+      {
+        x: "-50%",
+        duration: 5,
+        ease: "linear",
+        repeat: -1,
+      }
+    );
   }, []);
-  
 
   return (
-    <div className="overflow-hidden w-[500px] bg-yellow-500 rounded-3xl  text-black">
-      <div className="flex ticker whitespace-nowrap">
-        <p className="">
-          Build Fast • Launch Smart • Scale Confidently •
-        </p>
-        <p className="">
-          Build Fast • Launch Smart • Scale Confidently •
-        </p>
-        
+    <div className="w-full flex justify-center mt-6">
+
+      <div className="w-full  overflow-hidden bg-black rounded px-4 py-2">
+
+        {/* MOVING BELT */}
+        <div
+          ref={tickerRef}
+          className="flex whitespace-nowrap text-white font-medium"
+        >
+          <p className="mx-6">
+            Build Fast • Launch Smart • Scale Confidently •
+          </p>
+          <p className="mx-6">
+            Build Fast • Launch Smart • Scale Confidently •
+          </p>
+          <p className="mx-6">
+            Build Fast • Launch Smart • Scale Confidently •
+          </p>
+          <p className="mx-6">
+            Build Fast • Launch Smart • Scale Confidently •
+          </p>
+        </div>
+
       </div>
+
     </div>
   );
 };
-export default HeroLabel
+
+export default HeroLabel;
