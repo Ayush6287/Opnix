@@ -38,11 +38,11 @@ const HeroHeading = () => {
                        text-3xl sm:text-4xl md:text-4xl lg:text-6xl">
 
           <span className="hero-line block">
-            From Concept to Production  — Rapidly.    We Build
+            From Concept to Production — Rapidly.  We Build   Modern Apps That 
           </span>
 
           <span className="hero-line block mt-2">
-         Modern Apps That   Go Live and Drive <br />
+           Go Live and Drive <br />
             <button ref={badgeRef}
             className="inline-block mt-4 px-4 py-2 
                        text-lg sm:text-xl md:text-2xl lg:text-2xl
