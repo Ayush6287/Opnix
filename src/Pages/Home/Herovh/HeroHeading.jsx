@@ -15,7 +15,7 @@ const HeroHeading = () => {
         ease: "power3.out",
        yoyo : true
       });
-
+     
       gsap.from(badgeRef.current, {
         scale: 0,
         opacity: 0,
@@ -47,9 +47,6 @@ const HeroHeading = () => {
             className="inline-block mt-4 px-4 py-2 
                        text-lg sm:text-xl md:text-2xl lg:text-2xl
                        rounded-xl bg-emerald-600 text-white"> Results.</button>
-             
-        
-           
           </span>
 
        

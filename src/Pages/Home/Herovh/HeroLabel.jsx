@@ -24,10 +24,10 @@ const HeroLabel = () => {
 
       <div className="w-full  overflow-hidden bg-black rounded px-4 py-2">
 
-        {/* MOVING BELT */}
+     
         <div
           ref={tickerRef}
-          className="flex whitespace-nowrap text-white font-medium"
+          className="flex whitespace-nowrap text-white font-medium "
         >
           <p className="mx-6">
             Build Fast • Launch Smart • Scale Confidently •
