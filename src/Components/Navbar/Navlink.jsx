@@ -29,7 +29,7 @@ const Navlink = () => {
   }, []);
 
   return (
-    <div className='flex justify-between flex-row gap-7 hover:text-emerald-400 items-center'>
+    <div className='flex justify-between bg-white/10 backdrop-blur-xl border border-white/20 shadow-lg px-5 py-4 rounded-4xl  flex-row gap-7  items-center hover:text-white/90 transition-colors duration-200'>
       <Link className='Home'  to="/">Home</Link>
       <Link className='About'  to="/about">About</Link>
       <Link className='Services'  to="/services">Services</Link>

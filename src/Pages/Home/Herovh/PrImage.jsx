@@ -32,7 +32,7 @@ const PrImage = () => {
   }, []);
 
   return (
-    <div className="relative w-full flex  mb-[-10px]   justify-center mt-[-10px] px-4">
+    <div className="relative w-full flex  mb-[-10px]   justify-center mt-10   px-4">
 
       {/* 🔥 (2) Glow behind image */}
       <div className="
@@ -51,7 +51,7 @@ const PrImage = () => {
         alt="Product preview"
         className="
           relative z-10
-          w-full
+          w-[1200px]
           max-w-4xl
           h-auto
           rounded-xl

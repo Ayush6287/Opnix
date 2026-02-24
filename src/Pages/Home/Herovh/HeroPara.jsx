@@ -13,7 +13,7 @@ const HeroPara = () => {
 
   return (
     <div>
-      <p className='hero-para-text text-[24px] mt-9  text-center  text-gray-500'>We Engineer AI-Driven Websites and Applications That Help  Startups and SMEs <br />  Execute Faster and Grow Strategically.</p>
+      <p className='hero-para-text text-[18px] mb-14 mt-7  text-center  text-gray-300'>We Engineer AI-Driven Websites and Applications That Help  Startups and SMEs <br />  Execute Faster and Grow Strategically.</p>
     </div>
   )
 }

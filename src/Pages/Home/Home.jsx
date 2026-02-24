@@ -8,16 +8,19 @@ import Services from '../Services/Services'
 import Label from './Herovh/Label'
 import PrImage from './Herovh/PrImage'
 import ServicesSection from './ServicesVh/ServicesSection'
+import Casestudies from './CaseStudies/Casestudies'
 
 const Home = () => {
   return (
-    <div className='h-full bg-[radial-gradient(circle_at_top,_rgba(16,185,129,0.12),_transparent_60%),whitesmoke]   w-full    flex flex-col  text-black'>
-     <div className='flex flex-col mt-15 sm:mt-20 items-center bg-[whitesmoke] w-full h-full  text-black'>
+    <div className='h-full      w-full    flex flex-col  text-black'>
+     <div className='flex flex-col justify-center  mt-15 sm:mt-20 items-center  w-full h-full  text-black'>
        <Label />
      <HeroHeading />
-     <HeroPara />
       <PrImage />
-     <HeroCta />
+     <HeroPara />
+       <HeroCta />
+     
+   
      <HeroLabel />
    
      </div>
@@ -25,7 +28,9 @@ const Home = () => {
       <ServicesSection />
 
     </div>
-    
+    <div>
+      <Casestudies />
+    </div>
 </div>
    
    

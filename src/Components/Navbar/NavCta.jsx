@@ -9,7 +9,7 @@ const NavCta = () => {
     <a  href={url}
         target='_blank' 
         rel="noopener noreferrer"  
-        className='text-black'
+        className='text-white'
         >
           Contact
        
