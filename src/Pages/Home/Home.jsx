@@ -9,6 +9,7 @@ import Label from './Herovh/Label'
 import PrImage from './Herovh/PrImage'
 import ServicesSection from './ServicesVh/ServicesSection'
 import Casestudies from './CaseStudies/Casestudies'
+import ContactForm from '../../Components/Contact'
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
      <HeroPara />
        <HeroCta />
      
-   
+   <ContactForm />
      <HeroLabel />
    
      </div>

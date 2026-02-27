@@ -22,12 +22,12 @@ const HeroLabel = () => {
   return (
     <div className="w-full flex justify-center mt-6">
 
-      <div className="w-full  overflow-hidden bg-white  bg-black rounded px-4 py-2">
+      <div className="w-full  overflow-hidden bg-black   rounded px-4 py-2">
 
      
         <div
           ref={tickerRef}
-          className="flex whitespace-nowrap  text-black font-medium "
+          className="flex whitespace-nowrap  text-white font-medium "
         >
           <p className="mx-6">
             Build Fast • Launch Smart • Scale Confidently •

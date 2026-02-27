@@ -2,7 +2,7 @@ import React from "react";
 
 const FirstAboutHeading = () => {
   return (
-    <div className="text-slate-300 flex flex-col items-center text-center bg-gradient-to-t from-emerald-800 to-black px-4 py-16">
+    <div className="text-slate-900 flex flex-col items-center text-center bg-gradient-to-t from-emerald-800 to-black px-4 py-16">
 
       {/* Heading */}
       <h1

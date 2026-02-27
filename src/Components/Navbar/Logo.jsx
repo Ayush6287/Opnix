@@ -16,7 +16,7 @@ const Logo = () => {
   })
   return (
     <div>
-      <h1 className='logo text-4xl font-mono  text-emerald-100'>Opnix</h1>
+      <h1 className='logo text-4xl font-mono  text-white'>Opnix</h1>
     </div>
   )
 }

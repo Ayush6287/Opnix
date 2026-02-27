@@ -6,7 +6,7 @@ import Home from './Pages/Home/Home'
 import About from './Pages/About/About'
 import Services from './Pages/Services/Services'
 import Contact from './Pages/Contact/Contact'
-import Pricing from './Pages/Home/ServicesVh/Pricing/Pricing'
+import Pricing from './Pages/Home/ServicesVh/Price/Pricing'
 
 const App = () => {
   return (

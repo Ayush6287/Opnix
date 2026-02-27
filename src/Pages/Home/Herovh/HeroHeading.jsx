@@ -35,7 +35,7 @@ const HeroHeading = () => {
     >
       <div className="w-full max-w-5xl text-center">
         <h1 className="font-semibold text-white leading-tight 
-                       text-2xl sm:text-4xl md:text-3xl lg:text-5xl">
+                       text-2xl sm:text-4xl md:text-3xl lg:text-5xl font-[ Faa]">
 
           <span className="hero-line block">
             From Concept to Production — Rapidly. <br />  We Build   Modern Apps That 

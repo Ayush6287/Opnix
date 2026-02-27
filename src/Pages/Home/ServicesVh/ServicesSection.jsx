@@ -14,7 +14,7 @@ import ui from '../../../assets/ui.svg'
 import server from '../../../assets/server.svg'
 const ServicesSection = () => {
     return (
-        <div className='h-max flex flex-col   justify-center   text-black    p-4  items-center '>
+        <div className='h-max flex flex-col   justify-center   text-black bg-[#0a0f14]   p-4  items-center '>
             <div className='h-max px-10 py-5 mb-7 flex flex-col items-center text-center '>
                 <ServicesHeading />
                 <ServicesPara />

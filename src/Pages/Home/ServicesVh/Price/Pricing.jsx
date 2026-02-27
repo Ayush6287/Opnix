@@ -1,9 +1,10 @@
 import React from 'react';
+import PricingHero from './PricingHero';
 
 const Pricing = () => {
   return (
-    <div>
-      
+    <div className='flex justify-center '>
+      <PricingHero />
     </div>
   );
 }

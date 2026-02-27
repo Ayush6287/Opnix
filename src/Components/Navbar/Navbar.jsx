@@ -6,7 +6,7 @@ import MobileNavbar from './MobileNavbar'
 const Navbar = () => {
   return (
     <>
-    <div className=  ' hidden    px-9 py-5   text-white sm:flex justify-between items-center shadow-[0_8px_32px_rgba(0,0,0,0.6)]  '>
+    <div className=  ' hidden  px-9 py-5   text-white sm:flex justify-between items-center  bg-white/5 backdrop-blur-xl border border-white/10 '>
       <Logo />
       <Navlink />
       <SocailMediaElement />
