@@ -34,6 +34,8 @@ const Navlink = () => {
       <Link className='About'  to="/about">About</Link>
       <Link className='Services'  to="/services">Services</Link>
      <Link className='Pricing'to="/pricing">Pricing</Link>
+     <Link className='Login' to="/login">Login</Link>
+      <Link className='Signup' to="/signup">Signup</Link>
       <NavCta />
 
     </div>
