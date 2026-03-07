@@ -30,18 +30,20 @@ export default function Login() {
   };
 
   return (
-    <div>
-      <h2>Login</h2>
+    <div className="flex items-center text-center h-screen justify-center mb-5  flex-col">
+  
 
-      <form onSubmit={handleSubmit}>
-        <input
+      <form  className="flex items-center text-center w-2/5 p-10 rounded-2xl  bg-[#1c293c]  flex-col border-4 border-orange-400 "  
+      onSubmit={handleSubmit}>
+         <h2 className="text-4xl">Login</h2>
+        <input className="px-6 py-3 bg-gray-500 rounded-2xl  text-white mt-5 w-2/3"
           name="email"
           placeholder="Email"
           onChange={handleChange}
         />
         <br /><br />
 
-        <input
+        <input className="px-6 py-3 bg-gray-500 rounded-2xl  text-white  w-2/3"
           name="password"
           type="password"
           placeholder="Password"
@@ -49,7 +51,7 @@ export default function Login() {
         />
         <br /><br />
 
-        <button>Login</button>
+        <button className="px-8 py-3 bg-blue-500 rounded-3xl">Login</button>
       </form>
     </div>
   );
