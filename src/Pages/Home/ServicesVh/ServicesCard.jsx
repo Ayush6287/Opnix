@@ -26,14 +26,14 @@ const ServicesCard = (props) => {
       {/* ✨ Glass shine overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent opacity-20 pointer-events-none"></div>
 
-      <div className="flex flex-row items-center">
+      <div className="flex flex-col sm:flex sm:flex-row  items-center">
         
         {/* LEFT SIDE */}
-        <div className="w-[40%] flex flex-col justify-between gap-5 items-center">
+        <div className="w-max sm:w-[40%]   sm:flex sm:flex-col  flex flex-col justify-between gap-5 p-2  items-center">
 
           <img
             className="
-            w-full h-max rounded-2xl
+            w-[100px] sm:w-full  h-[100px] sm:h-max rounded-2xl
             border border-white/20
             shadow-lg shadow-emerald-500/20
             "
@@ -60,9 +60,9 @@ const ServicesCard = (props) => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="w-[60%] h-max rounded-3xl leading-relaxed p-4">
+        <div className="w-[60%] sm:w-[60%] flex flex-col sm:flex sm:flex-row   h-max rounded-3xl leading-relaxed p-4">
 
-          <h1 className="mb-4 text-slate-100 font-semibold text-lg">
+          <h1 className="mb-4  text-slate-100 font-semibold text-2xl text-center sm:text-left">
             {props.head}
           </h1>
 

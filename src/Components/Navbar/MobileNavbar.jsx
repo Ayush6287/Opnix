@@ -38,7 +38,7 @@ const MobileNavbar = () => {
   return (
     <>
       {/* TOP BAR */}
-      <nav className="fixed top-0 left-0 w-full bg-white shadow z-50 flex items-center justify-between px-5 py-4 sm:hidden">
+      <nav className="fixed top-0 left-0 w-full bg-white shadow z-50 flex items-center justify-between    px-5 py-4 sm:hidden">
 
         {/* Logo */}
         <h1 className="text-2xl font-bold text-emerald-800">
@@ -57,7 +57,7 @@ const MobileNavbar = () => {
       {open && (
         <div
           ref={menuRef}
-          className="fixed top-0 right-0 h-screen w-3/4 bg-white shadow-2xl z-40 flex flex-col pt-28 px-8 space-y-8 text-lg font-medium"
+          className="fixed top-0 right-0 h-screen w-3/4 bg-white text-black shadow-2xl z-40 flex flex-col pt-28 px-8 space-y-8 text-lg font-medium"
         >
           <Link to="/" onClick={toggleMenu}>Home</Link>
           <Link to="/about" onClick={toggleMenu}>About</Link>

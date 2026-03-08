@@ -51,7 +51,8 @@ const PrImage = () => {
         alt="Product preview"
         className="
           relative z-10
-          w-[1200px]
+          w-[350px]
+          sm:w-[1200px]
           max-w-4xl
           h-auto
           rounded-xl

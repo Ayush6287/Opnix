@@ -35,14 +35,14 @@ const HeroHeading = () => {
     >
       <div className="w-full max-w-5xl text-center">
         <h1 className="font-semibold text-white leading-tight 
-                       text-2xl sm:text-4xl md:text-3xl lg:text-5xl font-[ Faa]">
+                       text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-[ Faa] text-center">
 
           <span className="hero-line block">
-            From Concept to Production — Rapidly. <br />  We Build   Modern Apps That 
+            From Concept to Production <br />   Rapidly.  We Build   Modern Apps
           </span>
 
-          <span className="hero-line block mt-2">
-           Go Live and Drive 
+          <span className="hero-line block ">
+          That   Go Live and Drive 
             <button ref={badgeRef}
             className="inline-block mt-4 px-2  ml-3 
                        text-lg sm:text-xl md:text-2xl lg:text-2xl

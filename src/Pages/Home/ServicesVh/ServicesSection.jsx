@@ -22,7 +22,7 @@ const ServicesSection = () => {
             <div className='flex flex-col   gap-8'>
                 <div className='flex flex-col'>
 
-                    <div className='flex flex-row gap-6 m-2  w-full h-max '>
+                    <div className='flex flex-col sm:flex sm:flex-row  gap-6 m-2  w-[80%] h-max '>
                         <ServicesCard img={webdev} head='Custom Web Development Solutions ' para='We build fast, secure, and scalable websites tailored to your business goals. From landing pages to complex platforms, our solutions are optimized for performance, SEO, and user experience' />
 
 
@@ -30,7 +30,7 @@ const ServicesSection = () => {
 
                         <ServicesCard head='Web Applications' para='We create dynamic, feature-rich web applications that run smoothly across all devices. Our web apps are secure, scalable, and built for real-world business operations.' img={webapp} />
                     </div>
-                    <div className='flex flex-row m-2 gap-10' >
+                    <div className='flex flex-col m-2 gap-10' >
                         <ServicesCard head='Scalable SaaS Product Development' 
                          para='Launch and grow your Software-as-a-Service platform with confidence. We design cloud-ready SaaS solutions with multi-tenant architecture, high availability, and future-proof scalability.' img={saas} />
                         <ServicesCard head='Bug Fixing & Performance Optimization  
@@ -42,7 +42,7 @@ const ServicesSection = () => {
                 <div className='flex flex-col'>
 
 
-                    <div className='flex flex-row gap-6' >
+                    <div className='flex flex-col gap-6' >
                         <ServicesCard head='Server Setup & Cloud Deployment'
 
                          para='We configure secure servers and deploy your applications to the cloud with zero downtime. Our solutions ensure reliability, scalability, and smooth production performance.'img={server} />
@@ -50,7 +50,7 @@ const ServicesSection = () => {
                         <ServicesCard head='Modern Frontend Development' para='Deliver stunning user interfaces with responsive design and smooth interactions. We craft fast, accessible, and visually engaging frontends using the latest technologies.' img={Frontend} />
 
                     </div>
-                    <div className='flex flex-row gap-6  w-full h-max '>
+                    <div className='flex flex-col gap-6  w-full h-max '>
                         <ServicesCard head='Robust Backend Development'
                          para='Power your applications with secure APIs, efficient databases, and scalable architecture. We build backend systems designed to handle real-world traffic and data.' img={Backend}  />
                         <ServicesCard head='End-to-End Full Stack Solutions' para='From UI to server infrastructure, we handle the complete development lifecycle. Our full stack expertise ensures seamless integration, performance, and scalability.'img={FullStack} />
