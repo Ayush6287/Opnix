@@ -13,28 +13,22 @@ import ContactForm from '../../Components/Contact'
 
 const Home = () => {
   return (
-    <div className='h-full  p-5    w-full    flex flex-col  text-black'>
-     <div className='flex flex-col justify-center  mt-15 sm:mt-20 items-center  w-full h-full  text-black'>
-       <Label />
-     <HeroHeading />
-      <PrImage />
-     <HeroPara />
-       <HeroCta />
-     
-   <ContactForm />
-     <HeroLabel />
-   
-     </div>
-    <div>
-      <ServicesSection />
-
+    <div className='h-full     w-full    flex flex-col  text-black'>
+      <div className='flex flex-col justify-center  mt-15 sm:mt-20 items-center  w-full h-full   text-black'>
+        <Label />
+        <HeroHeading />
+        <PrImage />
+        <HeroPara />
+        <HeroCta />
+        <HeroLabel />
+      </div>
+      <div>
+        <ServicesSection />
+      </div>
+      <div>
+        <Casestudies />
+      </div>
     </div>
-    <div>
-      <Casestudies />
-    </div>
-</div>
-   
-   
   )
 }
 

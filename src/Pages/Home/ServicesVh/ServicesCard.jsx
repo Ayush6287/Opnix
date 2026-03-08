@@ -1,79 +1,226 @@
 import React from "react";
+import styled from "styled-components";
 
 const ServicesCard = (props) => {
   return (
-    <div
-      className="
-      relative overflow-hidden
+    <StyledWrapper>
+      <div className="card  ">
+        <div className="content ">
 
-      bg-gradient-to-br from-white/20 to-white/5
-      backdrop-blur-2xl
-      w-full h-full
-      flex flex-col gap-8
-      border border-white/20
-      rounded-2xl
-      px-3 py-3
-      text-white
-      shadow-[0_8px_32px_rgba(0,0,0,0.45)]
+          {/* BACK SIDE */}
+          <div className="back">
+            <div className="back-content">
+              <img src={props.img} alt="" width="60" />
+              <strong>{props.head}</strong>
+            </div>
+          </div>
 
-      transition-all duration-300
-      hover:-translate-y-2
-      hover:scale-[1.03]
-      hover:shadow-[0_20px_60px_rgba(16,185,129,0.45)]
-      hover:border-emerald-300/40
-      "
-    >
-      {/* ✨ Glass shine overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent opacity-20 pointer-events-none"></div>
+          {/* FRONT SIDE */}
+          <div className="front">
+            <div className="img">
+              <div className="circle"></div>
+              <div className="circle" id="right"></div>
+              <div className="circle" id="bottom"></div>
+            </div>
 
-      <div className="flex flex-col sm:flex sm:flex-row  items-center">
-        
-        {/* LEFT SIDE */}
-        <div className="w-max sm:w-[40%]   sm:flex sm:flex-col  flex flex-col justify-between gap-5 p-2  items-center">
+            <div className="front-content">
+              <small className="badge">Service</small>
 
-          <img
-            className="
-            w-[100px] sm:w-full  h-[100px] sm:h-max rounded-2xl
-            border border-white/20
-            shadow-lg shadow-emerald-500/20
-            "
-            src={props.img}
-            alt=""
-          />
+              <div className="description">
+                <div className="title">
+                  <p className="title">
+                    <strong>{props.head}</strong>
+                  </p>
+                </div>
 
-          <button
-            className="
-            px-5 py-2 rounded-lg
-            bg-white/10 backdrop-blur-md
-            text-white text-[16px]
-            border border-white/20
+                <p className="card-footer">
+                  {props.para}
+                </p>
 
-            transition
-            hover:bg-emerald-500/30
-            hover:shadow-lg hover:shadow-emerald-400/40
-            hover:-translate-y-1
-            "
-          >
-            Learn More....
-          </button>
-
-        </div>
-
-        {/* RIGHT SIDE */}
-        <div className="w-[60%] sm:w-[60%] flex flex-col sm:flex sm:flex-row   h-max rounded-3xl leading-relaxed p-4">
-
-          <h1 className="mb-4  text-slate-100 font-semibold text-2xl text-center sm:text-left">
-            {props.head}
-          </h1>
-
-          <p className="text-white/80">
-            {props.para}
-          </p>
+                <button className="btn">Learn More</button>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
-    </div>
+    </StyledWrapper>
   );
 };
+
+const StyledWrapper = styled.div`
+
+.card{
+  width:350px;
+  height:350px;
+  perspective:1000px;
+}
+
+.content{
+  width:100%;
+  height:100%;
+  position:relative;
+  transform-style:preserve-3d;
+  transition:transform 0.6s;
+  border-radius:8px;
+  box-shadow:0 0 10px rgba(0,0,0,0.8);
+}
+
+.card:hover .content{
+  transform:rotateY(180deg);
+}
+
+.front,
+.back{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border-radius:8px;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+}
+
+.front{
+  transform:rotateY(180deg);
+  background:#151515;
+  color:white;
+}
+
+.back{
+  transform:rotateY(0deg);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#151515;
+  overflow:hidden;
+}
+
+/* glowing border */
+
+.back::before{
+  content:"";
+  position:absolute;
+  width:180px;
+  height:180%;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    #20c997,
+    #20c997,
+    transparent
+  );
+  animation:borderRotate 4s linear infinite;
+}
+
+.back-content{
+  position:absolute;
+  width:96%;
+  height:96%;
+  background:#151515;
+  border-radius:8px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  color:white;
+}
+
+/* animation */
+
+@keyframes borderRotate{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+.front-content{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  padding:15px;
+}
+
+.description{
+  background:#00000099;
+  padding:10px;
+  border-radius:6px;
+  backdrop-filter:blur(5px);
+}
+
+.badge{
+  background:#00000055;
+  padding:3px 10px;
+  border-radius:10px;
+  width:fit-content;
+}
+
+.card-footer{
+  color:#ffffff88;
+  margin-top:5px;
+  font-size:12px;
+}
+
+.btn{
+  margin-top:10px;
+  padding:6px 12px;
+  border:none;
+  background:#20c997;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.img{
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+
+.circle{
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  background:#ffbb66;
+  position:relative;
+  filter:blur(15px);
+  animation:floating 2600ms infinite linear;
+}
+
+#bottom{
+  background:#ff8866;
+  left:50px;
+  width:150px;
+  height:150px;
+  animation-delay:-800ms;
+}
+
+#right{
+  background:#ff2233;
+  left:160px;
+  top:-80px;
+  width:30px;
+  height:30px;
+  animation-delay:-1800ms;
+}
+
+@keyframes floating{
+  0%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(10px);
+  }
+  100%{
+    transform:translateY(0);
+  }
+}
+
+`;
 
 export default ServicesCard;

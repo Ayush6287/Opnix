@@ -7,7 +7,7 @@ const PrImage = () => {
 
   useEffect(() => {
     const el = imgRef.current;
-
+     
     // Entrance
     gsap.fromTo(
       el,
