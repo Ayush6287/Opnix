@@ -10,6 +10,11 @@ import PrImage from './Herovh/PrImage'
 import ServicesSection from './ServicesVh/ServicesSection'
 import Casestudies from './CaseStudies/Casestudies'
 import ContactForm from '../../Components/Contact'
+import ProcessSection from './ProcessSection/ProcessSection'
+import TechStack from '../TechStack/TechStack'
+import WhychooseUs from '../WhychooseUs/WhychooseUs'
+import ProjectShowcase from '../Projectshowcase/ProjectShowcase'
+import Cta from '../Cta/Cta'
 
 const Home = () => {
   return (
@@ -28,6 +33,21 @@ const Home = () => {
       <div>
         <Casestudies />
       </div>
+     <div>
+      <ProcessSection />
+     </div>
+     <div>
+      <TechStack />
+     </div>
+     <div>
+      <WhychooseUs />
+     </div>
+     <div>
+      <ProjectShowcase />
+     </div>
+     <div>
+      <Cta />
+     </div>
     </div>
   )
 }

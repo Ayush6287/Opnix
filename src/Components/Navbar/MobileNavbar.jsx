@@ -38,10 +38,10 @@ const MobileNavbar = () => {
   return (
     <>
       {/* TOP BAR */}
-      <nav className="fixed top-0 left-0 w-full bg-white shadow z-50 flex items-center justify-between    px-5 py-4 sm:hidden">
+      <nav className="fixed top-0 left-0 w-full bg-transparent shadow z-50 flex items-center justify-between    px-5 py-4 sm:hidden">
 
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-emerald-800">
+        <h1 className="text-2xl font-bold text-emerald-100">
           Opnix
         </h1>
 

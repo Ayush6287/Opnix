@@ -27,7 +27,7 @@ const HeroLabel = () => {
      
         <div
           ref={tickerRef}
-          className="flex whitespace-nowrap  text-xl  text-white text-center  font-medium sm:text-lg md:text-xl lg:text-2xl "
+          className="flex whitespace-nowrap    text-white text-center  font-medium sm:text-lg md:text-xl lg:text-sm py-1 text-sm tracking-wide "
         >
           <p className="mx-6">
             Build Fast • Launch Smart • Scale Confidently •

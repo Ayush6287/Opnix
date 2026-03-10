@@ -4,7 +4,10 @@ import { motion } from "motion/react";
 
 const CaseStudiesCard = ({head , para}) => {
   return (
-    <div className='flex flex-col items-center  border-white/80 border-2   bg-white/90 justify-between   p-2 rounded-2xl'>
+    <div className='flex flex-col items-center  border-white/80 border-2   bg-white/90 justify-between   p-2 rounded-2xl hover:-translate-y-2
+hover:shadow-xl
+transition
+duration-300'>
       <div>
         <img src={demo} alt="" />
       </div>
@@ -20,7 +23,7 @@ const CaseStudiesCard = ({head , para}) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
     >
-      Click Me!
+      View Case Study →
     </motion.button>
         </div>
         

@@ -22,7 +22,7 @@ const ServicesSection = () => {
             
                 <div className='  '>
 
-                    <div className='sm:grid grid grid-row-4   sm:grid-cols-3 gap-6 md:grid md:grid-cols-2  w-full h-max items-center justify-center lg:grid lg:grid-cols-3 '>
+                    <div className='sm:grid grid grid-row-4   sm:grid-cols-3 gap-12 md:grid md:grid-cols-2  w-full h-max items-center justify-center lg:grid lg:grid-cols-3 '>
                         <ServicesCard img={webdev} head='Custom Web Development Solutions ' para='We build fast, secure, and scalable websites tailored to your business goals. From landing pages to complex platforms, our solutions are optimized for performance, SEO, and user experience' />
 
 

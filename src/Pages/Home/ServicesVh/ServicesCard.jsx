@@ -10,34 +10,34 @@ const ServicesCard = (props) => {
           {/* BACK SIDE */}
           <div className="back">
             <div className="back-content">
-              <img src={props.img} alt="" width="60" />
-              <strong>{props.head}</strong>
+              <img src={props.img} alt="" width="90" className="rounded p-4 m-2 bg-[whitesmoke]  h-[240px] w-full object-contain " />
+              <strong className="text-2xl mb-3  text-center">{props.head}</strong>
             </div>
           </div>
 
           {/* FRONT SIDE */}
-          <div className="front">
+          <div className="front bg-gradient-to-b from-white to-gray-50">
             <div className="img">
               <div className="circle"></div>
               <div className="circle" id="right"></div>
               <div className="circle" id="bottom"></div>
             </div>
 
-            <div className="front-content">
-              <small className="badge">Service</small>
+            <div className="front-content  ">
+              <small className="badge font-serif">Our Solutions</small>
 
               <div className="description">
                 <div className="title">
                   <p className="title">
-                    <strong>{props.head}</strong>
+                    <strong className="text-3xl">{props.head}</strong>
                   </p>
                 </div>
 
-                <p className="card-footer">
+                <p className="card-footer text-[22px]">
                   {props.para}
                 </p>
 
-                <button className="btn">Learn More</button>
+                <button className="btn hover:translate-x-1 transition-all duration-200  bg-green-950 font-bold"> View Details → </button>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ const StyledWrapper = styled.div`
   display:flex;
   justify-content:center;
   align-items:center;
-  background:#151515;
+  
   overflow:hidden;
 }
 
@@ -154,10 +154,13 @@ const StyledWrapper = styled.div`
 }
 
 .badge{
-  background:#00000055;
+  background:green;
   padding:3px 10px;
-  border-radius:10px;
+  border-radius:15px;
   width:fit-content;
+  font-size:18px;
+  
+  
 }
 
 .card-footer{
@@ -170,8 +173,7 @@ const StyledWrapper = styled.div`
   margin-top:10px;
   padding:6px 12px;
   border:none;
-  background:#20c997;
-  color:white;
+  
   border-radius:5px;
   cursor:pointer;
 }
